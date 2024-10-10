@@ -4,15 +4,25 @@ Este repositório documenta o serviço CountryInfoService, uma API SOAP para obt
 
 ## Ferramenta Utilizada: Bruno
 
-Bruno é uma ferramenta útil para desenvolvimento e teste de APIs, incluindo serviços SOAP. Tem uma interface intuitiva, é fácil organizar coleções de endpoints, adicionar variáveis de ambiente e realizar testes de integração.
+Bruno é uma ferramenta útil para desenvolvimento e teste de APIs. Tem uma interface intuitiva, é fácil organizar coleções de endpoints, adicionar variáveis de ambiente e realizar testes de integração.
 
-### Instalação do Bruno
+### Como usar o Bruno
+Para utilizar as requisições armazenadas neste repositório com o Bruno, siga os passos abaixo:
 
-Acesse o [site oficial do Bruno](https://www.usebruno.com/downloads), baixe e instale a versão mais recente compatível com seu sistema operacional.
+1. **Instalação do Bruno:**
+  Acesse o [site oficial do Bruno](https://www.usebruno.com/downloads), baixe e instale a versão mais recente compatível com seu sistema operacional.
+
+2. **Clone este repositório:**
+   ```bash
+   git clone git@github.com:thalis-freitas/country_info_service_docs.git
+   ```
+   
+3. **Acessar requisições com o Bruno**:
+Abra o Bruno e direcione-o para a pasta clonada, ele irá carregar todos os arquivos `.bru` disponíveis. Você agora poderá visualizar, editar e enviar requisições diretamente pelo Bruno.
 
 ### Configurando o Ambiente no Bruno
 
-Para facilitar o teste dos endpoints, está configurado o ambiente `Default` no Bruno, contendo variáveis comuns que são utilizadas em todas as requisições. Certifique-se de utilizar o ambiente `Default` para uma experiência de teste mais simples e organizada.
+Para facilitar os testes, está configurado o ambiente `Default` no Bruno, contendo variáveis comuns que são utilizadas em todas as requisições. Certifique-se de utilizar o ambiente `Default` para uma experiência de teste mais simples e organizada.
 
 ### Variáveis de Ambiente
 
