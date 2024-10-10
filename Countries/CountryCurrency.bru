@@ -1,0 +1,24 @@
+meta {
+  name: CountryCurrency
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{BASE_URL}}{{SERVICE_PATH}}
+  body: xml
+  auth: none
+}
+
+headers {
+  Content-Type: text/xml
+}
+
+body:xml {
+  {{ENVELOPE_START}}
+    <CountryCurrency xmlns="{{NAMESPACE}}">
+      <sCountryISOCode>BR</sCountryISOCode>
+    </CountryCurrency>
+  {{ENVELOPE_END}}
+  
+}

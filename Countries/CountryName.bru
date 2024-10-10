@@ -1,0 +1,24 @@
+meta {
+  name: CountryName
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{BASE_URL}}{{SERVICE_PATH}}
+  body: xml
+  auth: none
+}
+
+headers {
+  Content-Type: text/xml
+}
+
+body:xml {
+  {{ENVELOPE_START}}
+    <CountryName xmlns="{{NAMESPACE}}">
+      <sCountryISOCode>BR</sCountryISOCode>
+    </CountryName>
+  {{ENVELOPE_END}}
+  
+}

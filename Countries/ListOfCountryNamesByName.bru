@@ -1,0 +1,22 @@
+meta {
+  name: ListOfCountryNamesByName
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}{{SERVICE_PATH}}
+  body: xml
+  auth: none
+}
+
+headers {
+  Content-Type: text/xml
+}
+
+body:xml {
+  {{ENVELOPE_START}}
+    <ListOfCountryNamesByName xmlns="{{NAMESPACE}}"/>
+  {{ENVELOPE_END}}
+  
+}

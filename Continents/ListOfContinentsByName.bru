@@ -1,0 +1,22 @@
+meta {
+  name: ListOfContinentsByName
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}{{SERVICE_PATH}}
+  body: xml
+  auth: none
+}
+
+headers {
+  Content-Type: text/xml
+}
+
+body:xml {
+  {{ENVELOPE_START}}
+    <ListOfContinentsByName xmlns="{{NAMESPACE}}"/>
+  {{ENVELOPE_END}}
+  
+}

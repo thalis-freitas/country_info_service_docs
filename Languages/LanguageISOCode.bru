@@ -1,0 +1,24 @@
+meta {
+  name: LanguageISOCode
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{BASE_URL}}{{SERVICE_PATH}}
+  body: xml
+  auth: none
+}
+
+headers {
+  Content-Type: text/xml
+}
+
+body:xml {
+  {{ENVELOPE_START}}
+    <LanguageISOCode xmlns="{{NAMESPACE}}">
+      <sLanguageName>Portuguese</sLanguageName>
+    </LanguageISOCode>
+  {{ENVELOPE_END}}
+  
+}

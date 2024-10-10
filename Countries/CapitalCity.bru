@@ -1,0 +1,24 @@
+meta {
+  name: CapitalCity
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{BASE_URL}}{{SERVICE_PATH}}
+  body: xml
+  auth: none
+}
+
+headers {
+  Content-Type: text/xml
+}
+
+body:xml {
+  {{ENVELOPE_START}}
+    <CapitalCity xmlns="{{NAMESPACE}}">
+      <sCountryISOCode>BR</sCountryISOCode>
+    </CapitalCity>
+  {{ENVELOPE_END}}
+  
+}

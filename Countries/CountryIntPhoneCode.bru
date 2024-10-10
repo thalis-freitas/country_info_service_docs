@@ -1,0 +1,24 @@
+meta {
+  name: CountryIntPhoneCode
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{BASE_URL}}{{SERVICE_PATH}}
+  body: xml
+  auth: none
+}
+
+headers {
+  Content-Type: text/xml
+}
+
+body:xml {
+  {{ENVELOPE_START}}
+    <CountryIntPhoneCode xmlns="{{NAMESPACE}}">
+      <sCountryISOCode>BR</sCountryISOCode>
+    </CountryIntPhoneCode>
+  {{ENVELOPE_END}}
+  
+}

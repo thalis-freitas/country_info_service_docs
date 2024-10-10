@@ -1,0 +1,24 @@
+meta {
+  name: CountryFlag
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{BASE_URL}}{{SERVICE_PATH}}
+  body: xml
+  auth: none
+}
+
+headers {
+  Content-Type: text/xml
+}
+
+body:xml {
+  {{ENVELOPE_START}}
+    <CountryFlag xmlns="{{NAMESPACE}}">
+      <sCountryISOCode>BR</sCountryISOCode>
+    </CountryFlag>
+  {{ENVELOPE_END}}
+  
+}
